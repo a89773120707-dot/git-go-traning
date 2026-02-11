@@ -13,10 +13,15 @@ func Greet(name string) string {
 
 	return "Hello " + name + "!"
 }
-
+func Square(n int) int {
+	return n * n
+}
 func main() {
 	fmt.Println(Greet(""))
 	fmt.Println(Greet("anar"))
 	fmt.Println(Greet("Anar"))
+
+	fmt.Println(Square(2))
+	fmt.Println(Square(4))
 
 }
