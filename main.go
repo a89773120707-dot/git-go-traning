@@ -40,6 +40,18 @@ func IsValidName(name string) bool {
 func double(n int) int {
 	return n * 2
 }
+
+func UpperCheckAsci(name string) bool {
+	if name == "" {
+		return false
+	}
+
+	first := name[0]
+
+	return first >= 'A' && first <= 'Z'
+
+}
+
 func main() {
 	fmt.Println(Greet(""))
 	fmt.Println(Greet("anar"))
@@ -51,5 +63,8 @@ func main() {
 	fmt.Println("Isvalidname('Alex'):", IsValidName("Alex"))
 
 	fmt.Println(double(7))
+
+	fmt.Println("UpperCheckAsci name anar - ", UpperCheckAsci("anar"))
+	fmt.Println("UpperCheckAsci name Anar - ", UpperCheckAsci("Anar"))
 
 }
