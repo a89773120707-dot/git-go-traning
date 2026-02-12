@@ -37,6 +37,9 @@ func IsValidName(name string) bool {
 	return true
 }
 
+func double(n int) int {
+	return n * 2
+}
 func main() {
 	fmt.Println(Greet(""))
 	fmt.Println(Greet("anar"))
@@ -46,5 +49,7 @@ func main() {
 	fmt.Println(Square(4))
 
 	fmt.Println("Isvalidname('Alex'):", IsValidName("Alex"))
+
+	fmt.Println(double(7))
 
 }
